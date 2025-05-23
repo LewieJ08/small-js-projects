@@ -32,13 +32,13 @@ function main() {
 
         let operator = Number(prompt("Enter an operator (1-5) > "));
 
-        if (operator === NaN) {
-            console.log("Input must be a number, please try again");
-            continue;
-        }
-        else if (operator === 5) {
+        if (operator === 5) {
             console.log("Exiting...");
             break;
+        }
+        else if (isNaN(operator)) {
+            console.log("Input must be a number, please try again");
+            continue;
         }
 
         let num1 = Number(prompt("Enter the first number > "));
