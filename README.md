@@ -8,6 +8,10 @@ Although I come from a Python background, I'm currently learning JavaScript and 
 
 All projects in this repository are run using **Node.js**, allowing me to focus purely on JavaScript as a programming language without involving the browser or working with HTML/CSS at this stage. This approach helps build a solid understanding of JavaScript's behavior and logic on its own.
 
+## Projects
+1. [Calculator](/calculator/main.js)
+2. [Weight Converter](/weight-converter/main.js)
+
 ## 🛠️ How to Run
 
 To run any project:
