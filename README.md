@@ -11,6 +11,7 @@ All projects in this repository are run using **Node.js**, allowing me to focus 
 ## Projects
 1. [Calculator](/calculator/main.js)
 2. [Weight Converter](/weight-converter/main.js)
+3. [Temperature Converter](/temp-converter/main.js)
 
 ## 🛠️ How to Run
 
