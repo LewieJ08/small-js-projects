@@ -47,6 +47,22 @@ function main() {
         console.log(`New Weight: ${newWeight} ${newUnit}`);
         break;
     }
+
+    while (true) {
+        const exitChoice = prompt("Would you like to perform another convertion? (Y/N) > ").toLowerCase();
+
+        switch(exitChoice) {
+            case "y":
+                main();
+
+            case "n":
+                return;
+
+            default:
+                console.log("Invalid input, please try again.");
+                continue;
+        }
+    }
 }
 
-main() 
+main();
