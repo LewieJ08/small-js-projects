@@ -1,8 +1,14 @@
 const prompt = require("prompt-sync")();
 const units = ["C","F","K"];
 
-function convertTemp() {
-    //pass
+function convertTemp(temp, initUnit, newUnit) {
+    if (initUnit === newUnit) {
+        return temp;
+    }
+
+    switch (initUnit) {
+        //pass
+    }
 }
 
 function main() {
@@ -31,7 +37,7 @@ function main() {
             continue;
         }
 
-        let newTemp = convertTemp(temp, initUnit, newUnit)
+        let newTemp = convertTemp(temp, initUnit, newUnit);
     }
 }
 
