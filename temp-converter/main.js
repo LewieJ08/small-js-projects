@@ -2,17 +2,34 @@ const prompt = require("prompt-sync")();
 const units = ["C","F","K"];
 
 function convertTemp(temp, initUnit, newUnit) {
-    if (initUnit === newUnit) {
-        return temp;
-    }
+    let celsius;
 
     switch (initUnit) {
-        //pass
+        case "C":
+            celsius = temp;
+            break;
+        case "F":
+            celsius = (temp - 32) * 5 / 9;
+            break;
+        case "K":
+            celsius = temp - 273.15;;
+            break;
+    }
+
+    switch (newUnit) {
+        case "C":
+            return celsius;
+        case "F":
+            return (celsius * 9 / 5) + 32;
+        case "K":
+            return celsius + 273.15;
     }
 }
 
 function main() {
     let temp;  
+    let initUnit;
+    let newUnit;
 
     while (true) {
         temp = Number(prompt("Enter Temperature without unit > "));
@@ -28,16 +45,32 @@ function main() {
     console.log(`Tempearture units: \n${units}`);
 
     while (true) {
-        console.log(`Tempearture units: \n${units}`);
-        let initUnit = prompt("Enter the current tempearture unit > ");
-        let newUnit = prompt("Enter the unit to convert to > ");
+        initUnit = prompt("Enter the current tempearture unit > ").toUpperCase();
+        newUnit = prompt("Enter the unit to convert to > ").toUpperCase();
 
         if (!units.includes(initUnit) || !units.includes(newUnit)) {
-            console.log(`Inalid input, unit must be one of \n${units}`);
+            console.log(`Invalid input, unit must be one of \n${units}`);
             continue;
         }
 
-        let newTemp = convertTemp(temp, initUnit, newUnit);
+        break;
+    }
+
+    let newTemp = convertTemp(temp, initUnit, newUnit);
+    console.log(`Your new temperature: ${newTemp} ${newUnit}\n`);
+
+    while (true) {
+        let exitChoice = prompt("Would you like to perform another convertion? (Y/N) > ").toLowerCase();
+
+        switch(exitChoice) {
+            case "y":
+                return main();
+            case "n":
+                return console.log("Exiting...");
+            default:
+                console.log("Invalid input, please try again.");
+                continue;
+        }
     }
 }
 
