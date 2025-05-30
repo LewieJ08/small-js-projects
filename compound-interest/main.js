@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")();
 
 function main() {
-    //pass
+    let baseValue = prompt("")
 }
 
 main()
