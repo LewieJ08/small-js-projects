@@ -2,9 +2,9 @@ const prompt = require("prompt-sync")();
 
 function calc(baseValue, interestRate, timeFrame) {
     const interestMultipler = interestRate + 1;
-    let subTotal = Math.pow(interestMultipler, timeFrame)
+    let subTotal = Math.pow(interestMultipler, timeFrame);
 
-    return baseValue * subTotal
+    return baseValue * subTotal;
 }
 
 function main() {
@@ -18,7 +18,7 @@ function main() {
             continue;
         }
         else {
-            total = calc(baseValue, interestRate, timeFrame)
+            total = calc(baseValue, interestRate, timeFrame);
             console.log(`Your total amount after ${timeFrame} year(s) will be: ${total}`);
             break;
         } 
