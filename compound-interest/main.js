@@ -19,9 +19,23 @@ function main() {
         }
         else {
             total = calc(baseValue, interestRate, timeFrame);
-            console.log(`Your total amount after ${timeFrame} year(s) will be: ${total}`);
+            console.log(`\nYour total amount after ${timeFrame} year(s) will be: ${total}`);
             break;
         } 
+    }
+
+    while (true) {
+        const exitOption = prompt("\nWould you like to make another calculation? (Y/N) > ").toLowerCase();
+        
+        switch (exitOption) {
+            case "y":
+                return main();
+            case "n":
+                return;
+            default:
+                console.log("Invalid input.");
+                continue;
+        }
     }
 }
 
