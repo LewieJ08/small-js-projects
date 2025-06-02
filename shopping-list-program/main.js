@@ -21,18 +21,18 @@ function main() {
             continue;
         }
 
-        foods.push(food)
-        prices.push(price)        
+        foods.push(food);
+        prices.push(price); 
     }
-    
-    for (let price in prices) {
-        total += prices[price];
-    }
-    
-    console.log("\nFoods:")
 
-    for (let i = 1; i == foods.length; i++) {
-        console.log(`Food ${i}: ${foods[i+1]} £${prices[i+1]}`);
+    console.log("\nFoods:");
+    
+    for (let price of prices) {
+        total += price;
+    }
+
+    for (let i = 0; i < foods.length; i++) {
+        console.log(`${i+1}| ${foods[i]}: £${prices[i]}`);
     }
 
     console.log(`Total price: £${total}`);
