@@ -15,6 +15,8 @@ All projects in this repository are run using **Node.js**, allowing me to focus 
 4. [Compound Interest Calculator](/compound-interest/main.js)
 5. [Shopping List Program](/shopping-list-program/main.js)
 
+Continuing to grow...
+
 ## 🛠️ How to Run
 
 To run any project:
