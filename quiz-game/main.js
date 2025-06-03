@@ -43,6 +43,7 @@ function main() {
         i += 1
     }
     
+    console.log(`Final score: ${score}`)
 }
 
 main()
