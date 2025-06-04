@@ -15,6 +15,7 @@ All projects in this repository are run using **Node.js**, allowing me to focus 
 4. [Compound Interest Calculator](/compound-interest/main.js)
 5. [Shopping List Program](/shopping-list-program/main.js)
 6. [Quiz game](/quiz-game/main.js)
+7. [Food Menu](/food-menu/main.js)
 
 Continuing to grow...
 
