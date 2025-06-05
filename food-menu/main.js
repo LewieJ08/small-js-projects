@@ -10,8 +10,20 @@ const menu = {
     "7": ["Hot Drink", 3.00],
 };
 
-function printReceipt(foods, totalPrice) {
-    // pass
+function printReceipt(foods, prices) {
+    let totalPrice = 0
+
+    for (let price of prices) {
+        totalPrice += price
+    }
+
+    console.log("\nRECEIPT:")
+
+    for (let i = 1; i <= foods.length; i++) {
+        console.log(`${i}. ${foods[i-1]} £${prices[i-1]}`)
+    }
+
+    console.log(`Total: £${totalPrice}`)
 }
 
 function main() {
