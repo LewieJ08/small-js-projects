@@ -17,13 +17,13 @@ function printReceipt(foods, prices) {
         totalPrice += price
     }
 
-    console.log("\nRECEIPT:")
+    console.log("\nRECEIPT:");
 
     for (let i = 1; i <= foods.length; i++) {
-        console.log(`${i}. ${foods[i-1]} £${prices[i-1]}`)
+        console.log(`${i}. ${foods[i-1]} £${prices[i-1]}`);
     }
 
-    console.log(`Total: £${totalPrice}`)
+    console.log(`Total: £${totalPrice}`);
 }
 
 function main() {
