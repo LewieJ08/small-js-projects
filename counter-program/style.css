@@ -1,0 +1,21 @@
+h1, h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    color: #f2f2f2;
+    background-color: #146eb4;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color: #2d96e8;
+}
