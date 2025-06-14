@@ -17,7 +17,7 @@ Originally, this repo focused solely on Node.js projects so I could learn JavaSc
 
 # HTML CSS Javascript Projects
 
-
+1. [Counter Program](/counter-program/)
 
 Continuing to grow...
 
