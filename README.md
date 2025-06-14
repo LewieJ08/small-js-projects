@@ -1,14 +1,12 @@
 # 📁 Small JavaScript Projects
 
-Welcome to my collection of small JavaScript projects! This repository serves as a personal learning space where I explore the fundamentals of JavaScript through simple, focused scripts.
+Welcome to my collection of small JavaScript projects! This repository is a personal learning space where I explore and strengthen my understanding of JavaScript — starting with core language fundamentals and now expanding into frontend development using HTML and CSS.
 
-Although I come from a Python background, I'm currently learning JavaScript and using these projects to build fluency in the language — from syntax and control structures to functions and logic flow. Each project is self-contained and designed to reinforce core programming concepts in JavaScript.
-
-## 💡 Why Node.js?
-
-All projects in this repository are run using **Node.js**, allowing me to focus purely on JavaScript as a programming language without involving the browser or working with HTML/CSS at this stage. This approach helps build a solid understanding of JavaScript's behavior and logic on its own.
+Originally, this repo focused solely on Node.js projects so I could learn JavaScript as a programming language, without distractions from browser APIs or styling. Now, I'm expanding this repo to include browser-based projects that combine JavaScript with HTML and CSS, as I learn how to build interactive user interfaces and dynamic web pages.
 
 ## Projects
+    
+# Node.js Projects (Just JavaScript)
 1. [Calculator](/calculator/main.js)
 2. [Weight Converter](/weight-converter/main.js)
 3. [Temperature Converter](/temp-converter/main.js)
@@ -16,6 +14,10 @@ All projects in this repository are run using **Node.js**, allowing me to focus 
 5. [Shopping List Program](/shopping-list-program/main.js)
 6. [Quiz game](/quiz-game/main.js)
 7. [Food Menu](/food-menu/main.js)
+
+# HTML CSS Javascript Projects
+
+
 
 Continuing to grow...
 
