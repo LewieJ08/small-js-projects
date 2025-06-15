@@ -15,9 +15,10 @@ Originally, this repo focused solely on Node.js projects so I could learn JavaSc
 6. [Quiz game](/quiz-game/main.js)
 7. [Food Menu](/food-menu/main.js)
 
-# HTML CSS Javascript Projects
+# HTML, CSS, JavaScript Projects (Browser)
 
 1. [Counter Program](/counter-program/)
+2. [Number Guessing Game](/number-guessing-game/main.js)
 
 Continuing to grow...
 
