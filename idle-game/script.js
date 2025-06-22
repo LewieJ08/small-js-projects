@@ -7,8 +7,8 @@ let cps = 0;
 let value = 0;
 
 function updateHTML() {
-    valueH1.innerHTML = value;
-    cpsH3.innerHTML = cps; 
+    valueH1.innerHTML = Math.round(value * 10) / 10;
+    cpsH3.innerHTML = Math.round(cps * 10) / 10; 
 }
 
 // CPS Func + CPS Interval 
@@ -29,9 +29,9 @@ button.addEventListener("click", function () {
 
 // Cursor Func
 cursorButton.addEventListener("click", function () {
-    if (value >= 5) {
-        value -= 5;
-        cps += 1;
+    if (value >= 15) {
+        value -= 15;
+        cps += 0.1;
         updateHTML();
     }
     else {
