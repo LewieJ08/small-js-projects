@@ -11,6 +11,15 @@ function updateHTML() {
     cpsH3.innerHTML = cps; 
 }
 
+// CPS Func + CPS Interval 
+
+function CpsFunc() {
+    value += cps
+    updateHTML()
+}
+
+setInterval(CpsFunc, 1000)
+
 button.addEventListener("click", function () {
     value++;
     updateHTML()
@@ -29,4 +38,3 @@ cursorButton.addEventListener("click", function () {
         window.alert("Not Enough Funds");
     }
 });
-
